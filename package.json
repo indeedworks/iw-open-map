@@ -17,7 +17,7 @@
     "typecheck": "pnpm --filter @indeedworks/open-map build && pnpm --filter @indeedworks/open-map-vue2 build && pnpm --filter @indeedworks/open-map-vue3 build && pnpm -r --if-present typecheck",
     "test": "vitest run",
     "test:watch": "vitest",
-    "clean": "pnpm -r --if-present clean"
+    "clean": "pnpm -r --if-present run clean"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",

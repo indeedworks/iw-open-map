@@ -52,7 +52,10 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build documentation
-        run: pnpm --filter iw-open-map-docs build
+        run: |
+          pnpm --filter @indeedworks/open-map build
+          pnpm --filter @indeedworks/open-map-vue3 build
+          pnpm --filter iw-open-map-docs build
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
