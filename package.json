@@ -1,0 +1,33 @@
+{
+  "name": "iw-open-map-monorepo",
+  "version": "0.1.1",
+  "private": true,
+  "description": "面向国内开发者的开源 Web 地图 SDK",
+  "license": "MIT",
+  "packageManager": "pnpm@11.19.0",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "preinstall": "node ./scripts/only-pnpm.mjs",
+    "dev": "pnpm --filter iw-open-map-docs dev",
+    "dev:vanilla": "pnpm --filter iw-open-map-vanilla-demo dev",
+    "dev:vue2": "pnpm --filter iw-open-map-vue2-demo dev",
+    "dev:vue3": "pnpm --filter iw-open-map-vue3-demo dev",
+    "build": "pnpm -r --workspace-concurrency=1 build",
+    "lint": "eslint . --max-warnings=0",
+    "typecheck": "pnpm --filter @indeedworks/open-map build && pnpm --filter @indeedworks/open-map-vue2 build && pnpm --filter @indeedworks/open-map-vue3 build && pnpm -r --if-present typecheck",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "clean": "pnpm -r --if-present clean"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.33.0",
+    "@types/geojson": "^7946.0.16",
+    "@types/node": "^24.3.0",
+    "@vitest/coverage-v8": "^3.2.4",
+    "eslint": "^9.33.0",
+    "globals": "^16.3.0",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.40.0",
+    "vitest": "^3.2.4"
+  }
+}

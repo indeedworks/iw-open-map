@@ -1,0 +1,9 @@
+services:
+  open-map:
+    build:
+      context: .
+      args:
+        VITE_TIANDITU_TOKEN: ${VITE_TIANDITU_TOKEN:-}
+    ports:
+      - "8080:80"
+    restart: unless-stopped

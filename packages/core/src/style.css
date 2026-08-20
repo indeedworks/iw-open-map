@@ -1,0 +1,11 @@
+@import 'maplibre-gl/dist/maplibre-gl.css';
+
+.open-map-root { width: 100%; height: 100%; min-height: 240px; position: relative; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+.open-map-marker { display: flex; align-items: center; gap: 6px; cursor: pointer; user-select: none; }
+.open-map-marker__pin { width: 22px; height: 22px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); background: #2563eb; border: 2px solid #fff; box-shadow: 0 2px 7px rgb(15 23 42 / 35%); }
+.open-map-marker__pin::after { content: ''; position: absolute; width: 6px; height: 6px; border-radius: 50%; background: white; margin: 6px; }
+.open-map-marker__label { padding: 3px 7px; white-space: nowrap; border-radius: 5px; background: rgb(255 255 255 / 92%); color: #172033; font-size: 12px; box-shadow: 0 1px 5px rgb(15 23 42 / 18%); }
+.open-map-marker img { display: block; max-width: 48px; max-height: 48px; }
+.open-map-draw-cursor { cursor: crosshair !important; }
+.open-map-edit-vertex { width: 14px; height: 14px; padding: 0; border: 2px solid #fff; border-radius: 50%; background: #f97316; box-shadow: 0 1px 5px rgb(15 23 42 / 40%); cursor: move; }
+.maplibregl-ctrl-attrib { font-size: 11px; }

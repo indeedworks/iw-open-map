@@ -1,0 +1,35 @@
+{
+  "name": "@indeedworks/open-map",
+  "version": "0.1.1",
+  "description": "OpenMap 框架无关核心 SDK",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/iw-open-map.cjs",
+  "module": "./dist/iw-open-map.js",
+  "unpkg": "./dist/iw-open-map.iife.js",
+  "types": "./dist/index.d.ts",
+  "style": "./dist/iw-open-map.css",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/iw-open-map.js",
+      "require": "./dist/iw-open-map.cjs"
+    },
+    "./style.css": "./dist/iw-open-map.css"
+  },
+  "publishConfig": { "access": "public" },
+  "files": ["dist"],
+  "scripts": {
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@turf/turf": "^7.2.0",
+    "maplibre-gl": "^5.7.1"
+  },
+  "devDependencies": {
+    "vite": "^7.1.3",
+    "vite-plugin-dts": "^4.5.4"
+  }
+}

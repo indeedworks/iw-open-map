@@ -1,0 +1,19 @@
+{
+  "name": "@indeedworks/open-map-vue2",
+  "version": "0.1.1",
+  "description": "OpenMap Vue 2.6/2.7 适配组件",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/iw-open-map-vue2.cjs",
+  "module": "./dist/iw-open-map-vue2.js",
+  "unpkg": "./dist/iw-open-map-vue2.iife.js",
+  "types": "./dist/index.d.ts",
+  "style": "./dist/iw-open-map-vue2.css",
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/iw-open-map-vue2.js", "require": "./dist/iw-open-map-vue2.cjs" } },
+  "publishConfig": { "access": "public" },
+  "files": ["dist"],
+  "scripts": { "build": "vite build", "typecheck": "tsc --noEmit", "clean": "rm -rf dist" },
+  "dependencies": { "@indeedworks/open-map": "workspace:*" },
+  "peerDependencies": { "vue": "^2.6.14 || ^2.7.0" },
+  "devDependencies": { "vite": "^7.1.3", "vite-plugin-dts": "^4.5.4", "vue": "2.7.16" }
+}
