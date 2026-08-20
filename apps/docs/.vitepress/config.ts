@@ -5,6 +5,7 @@ export default defineConfig({
   lang: 'zh-CN',
   title: 'IWOpenMap',
   description: '面向国内开发者的开源 Web 地图 SDK',
+  base: process.env.DOCS_BASE ?? '/',
   cleanUrls: true,
   vite: {
     envDir: fileURLToPath(new URL('../../../', import.meta.url))
