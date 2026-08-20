@@ -15,7 +15,8 @@ export default defineConfig({
     nav: [
       { text: '指南', link: '/guide/' },
       { text: 'API', link: '/api/' },
-      { text: 'Playground', link: '/playground/' }
+      { text: 'Playground', link: '/playground/' },
+      { text: 'GitHub', link: 'https://github.com/indeedworks/iw-open-map' }
     ],
     sidebar: {
       '/guide/': [
@@ -30,7 +31,9 @@ export default defineConfig({
       '/api/': [{ text: 'API', items: [{ text: '核心 API', link: '/api/' }, { text: '地图源扩展', link: '/api/sources' }] }],
       '/playground/': [{ text: '功能示例', items: [{ text: '交互式演练场', link: '/playground/' }] }]
     },
-    socialLinks: [],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/indeedworks/iw-open-map' }
+    ],
     footer: { message: 'OpenMap 不是瓦片提供商。地图数据版权归相应数据提供方所有。', copyright: 'Released under the MIT License.' },
     search: { provider: 'local' }
   }
