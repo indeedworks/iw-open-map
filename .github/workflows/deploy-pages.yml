@@ -26,7 +26,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      DOCS_BASE: /${{ github.event.repository.name }}/
+      DOCS_BASE: /
       VITE_TIANDITU_TOKEN: ${{ secrets.VITE_TIANDITU_TOKEN }}
     steps:
       - name: Checkout repository

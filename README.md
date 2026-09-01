@@ -2,7 +2,7 @@
 
 OpenMap 是一套面向国内开发者的开源 Web 地图 SDK。它提供框架无关的 TypeScript 核心，并提供 Vue 2.6/2.7、Vue 3 适配组件以及普通 JavaScript 示例。
 
-**在线文档：** [https://indeedworks.github.io/iw-open-map/](https://indeedworks.github.io/iw-open-map/)
+**在线文档：** [https://openmap.indeedworks.cn/](https://openmap.indeedworks.cn/)
 
 > **重要说明：OpenMap 不是地图数据或瓦片提供商。** 本项目不提供、不代理、不缓存、不批量下载、也不重新分发天地图或其他第三方瓦片。默认接入天地图时，使用者必须自行申请 Key，并遵守天地图服务条款和国内地图相关法律法规。不得移除版权、数据来源及审图信息。
 
